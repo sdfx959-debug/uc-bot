@@ -1,8 +1,9 @@
+import os  # 1. Boshiga buni qo'shing
 from telegram import Update, ReplyKeyboardMarkup, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-# Token va kanallar
-BOT_TOKEN = "8626314578:AAEVCjVqy8ssXv-32WHfu5Vmja5TDf_4JbU"
+# 2. Token qatorini o'chirib, o'rniga buni yozing:
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNELS = {
     "majburiy": "@VEXENPUBGM", 
     "uc": "https://t.me/+dLBaeWMJh9A5YTdi",
